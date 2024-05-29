@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    min-height: 100vh;
+  }
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
+  hr{
+    border: none;
+    height: 1px;
+    background-color: #a9a9a9;
+}
+  .app{
+    width : 90%;
+    margin: auto;
+  }
+
+  .app-content{
+    display: flex;
+}
