@@ -1,0 +1,95 @@
+.tech{
+    width: 80%;
+    margin: auto;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-left{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.tech-left h1{
+    margin: 10px 20px ;
+}
+
+.left-text {
+    margin : 10px 20px;
+    font-size: 17px;
+}
+.tech-left p{
+    max-width: 75%;
+    margin : 10px 20px;
+}
+.tech-button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin : 10px 20px;
+}
+.tech-left button{
+    border-style: none;
+    gap : 20px;
+    border-radius: 35px;
+    padding: 20px;
+    border : 1px solid rgb(53, 53, 245);
+    width: max-content;
+    background-color: aliceblue;
+
+}
+
+.tech-right img {
+    border: 1px solid black;
+    border-radius: 75px;
+}
+
+
+.list{
+    width: 70%;
+    margin: auto;
+    height: 45vh;
+    display: ruby-text;
+    align-items: center;
+    justify-content: center;
+}
+.list-heading{
+    align-items: center;
+}
+.list-heading h1{
+    margin : 30px 20px;
+}
+.list-technician {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    grid-gap: 16px;
+    gap: 16px;
+}
+
+
+.list-technician button{
+    display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 20px;
+        height: 72px;
+        color: #383838;
+        font-size: 16px;
+        border-radius: 130px;
+        border: 1px solid #DADCE0;
+        background: #FFF;
+        transition: .3s;
+        cursor: pointer;
+}
+
+.list-technician img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #DADCE0;
+}
