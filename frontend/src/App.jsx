@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { Route, Routes } from "react-router-dom";
 import Technician from "./components/Technician/Technician";
 import Footer from "./components/Footer/Footer";
+import SidebarTP from "./components/TechnicalPost/SidebarTP/SidebarTP";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false)
@@ -14,9 +15,11 @@ function App() {
       <div className="app">
         <Navbar setShowLogin={setShowLogin} />
       </div>
-      <Routes>
+      {/* <Routes>
         <Route path='/postTechnician' element={<Technician />}></Route>
-      </Routes>
+      </Routes> */}
+      <div className="app"><SidebarTP /></div>
+
     </>
   )
 }
