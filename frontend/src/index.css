@@ -19,8 +19,12 @@
   .app{
     width : 90%;
     margin: auto;
+    display: inline-flex;
   }
-
+.app-boundary{
+  width: 90%;
+  margin: auto;
+}
   .app-content{
     display: flex;
 }

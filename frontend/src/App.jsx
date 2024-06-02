@@ -6,20 +6,22 @@ import { Route, Routes } from "react-router-dom";
 import Technician from "./components/Technician/Technician";
 import Footer from "./components/Footer/Footer";
 import SidebarTP from "./components/TechnicalPost/SidebarTP/SidebarTP";
+import MainContent from "./components/TechnicalPost/MainContentTp/MainContent";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false)
   return (
     <>
-      {showLogin ? <Login setShowLogin={setShowLogin} /> : <></>}
-      <div className="app">
+      <div className="app-boundary">
+        {showLogin ? <Login setShowLogin={setShowLogin} /> : <></>}
         <Navbar setShowLogin={setShowLogin} />
+        <div className="app">
+          <SidebarTP />
+          <Routes>
+            <Route path='/userList' element={<MainContent />} />
+          </Routes>
+        </div >
       </div>
-      {/* <Routes>
-        <Route path='/postTechnician' element={<Technician />}></Route>
-      </Routes> */}
-      <div className="app"><SidebarTP /></div>
-
     </>
   )
 }
