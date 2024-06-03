@@ -1,5 +1,6 @@
 import React from 'react'
 import './Technician.css'
+import { Link } from 'react-router-dom'
 import { assets } from '../../assets/assets'
 import TechnicianList from './TechnicianList'
 const Technician = () => {
@@ -14,13 +15,17 @@ const Technician = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt obcaecati quia culpa velit. Cum vel illo ab deserunt. Aspernatur reiciendis eum doloribus!</p>
                     <div className='tech-button'>
                         <button>
-                            Search Technician
+                            <Link to="/searchTech">
+                                Search Technician
+                            </Link>
                         </button>
                         <p>
 
                         </p>
                         <button>
-                            Post Jobs
+                            <Link to="/PostTech">
+                                Post Jobs
+                            </Link>
                         </button>
                     </div>
                 </div>

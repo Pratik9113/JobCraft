@@ -7,12 +7,12 @@ const SidebarTP = () => {
         <>
             <div className="sidebartp">
                 <div className="sidebartp-options">
-                    <NavLink to='/userList'><SidebarContent /></NavLink>
-                    <NavLink to='/userList'><SidebarContent /></NavLink>
-                    <NavLink to='/userList'><SidebarContent /></NavLink>
-                    <NavLink to='/userList'><SidebarContent /></NavLink>
-                    <NavLink to='/userList'><SidebarContent /></NavLink>
-                    <NavLink to='/userList'><SidebarContent /></NavLink>
+                    <NavLink to='/searchTech/userList'><SidebarContent /></NavLink>
+                    <NavLink to='/searchTech/userList'><SidebarContent /></NavLink>
+                    <NavLink to='/searchTech/userList'><SidebarContent /></NavLink>
+                    <NavLink to='/searchTech/userList'><SidebarContent /></NavLink>
+                    <NavLink to='/searchTech/userList'><SidebarContent /></NavLink>
+                    <NavLink to='/searchTech/userList'><SidebarContent /></NavLink>
                 </div>
             </div>
         </>
