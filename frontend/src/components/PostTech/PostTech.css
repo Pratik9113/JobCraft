@@ -151,3 +151,14 @@
     border-color: #e02522;
     box-shadow: 0 0 0 0.2rem rgba(229, 168, 168, 0.896);
   }
+
+  .post-tech-button{
+    border: none;
+    align-items: center;
+    padding: 10px;
+    border-radius:  4px;
+    color : white;
+    background-color: red;
+    font-size: 15px;
+    cursor: pointer;
+  }
