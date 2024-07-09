@@ -1,9 +1,10 @@
 import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+dotenv.config()
 const jwtAuth = (req, res, next) => {
     const { token } = req.cookies;
 
-    if (!token) {
-        
+    if (!token){
         return res.status(401).json({ error: 'User not authorized' });
     }
 

@@ -26,4 +26,22 @@ const addPost = async(req,res) =>{
     }
 }
 
-export {addPost}
+
+const postList = async (req, res) => {
+    const { userId } = req.user;
+
+    try {
+        const postListItems = await addJob.find({});
+
+        if (!postListItems) {
+            return res.status(404).json({ success: false, message: "No posts found" });
+        }
+
+        return res.json({ success: true, data: postListItems });
+    } catch (error) {
+        console.error("Error fetching post list:", error);
+        return res.status(500).json({ success: false, message: "Error fetching post list" });
+    }
+}
+
+export {addPost, postList}
