@@ -1,7 +1,8 @@
-import React from 'react'
-import './SidebarMainContent.css'
-import { assets } from '../../../assets/assets'
-const SidebarMainContent = () => {
+import React from 'react';
+import './SidebarMainContent.css';
+import { assets } from '../../../assets/assets';
+
+const SidebarMainContent = ({ job }) => {
   return (
     <div className="main-content">
       <div className="main-content-upper">
@@ -9,10 +10,10 @@ const SidebarMainContent = () => {
           <img src={assets.profile_icon} alt="" />
         </div>
         <div className="main-content-info">
-          <div><h1>Person Name </h1></div>
+          <div><h1>{job.name}</h1></div>
           <div className="main-content-professional">
             <img src={assets.cross_icon} alt='' />
-            <p>Profession Name </p>
+            <p>{job.professionName}</p>
           </div>
         </div>
       </div>
@@ -32,35 +33,35 @@ const SidebarMainContent = () => {
           <div className="main-content-info-user">
             <div className="main-content-user-info-first">
               <h1>Experience</h1>
-              <p>Maximum : 4 years </p>
+              <p>Maximum: 4 years</p>
             </div>
             <img src={assets.profile_icon} alt="" />
           </div>
           <div className="main-content-info-user">
             <div className="main-content-user-info-first">
               <h1>Experience</h1>
-              <p>Maximum : 4 years </p>
+              <p>Maximum: 4 years</p>
             </div>
             <img src={assets.profile_icon} alt="" />
           </div>
           <div className="main-content-info-user">
             <div className="main-content-user-info-first">
               <h1>Experience</h1>
-              <p>Maximum : 4 years </p>
+              <p>Maximum: 4 years</p>
             </div>
             <img src={assets.profile_icon} alt="" />
           </div>
           <div className="main-content-info-user">
             <div className="main-content-user-info-first">
               <h1>Experience</h1>
-              <p>Maximum : 4 years </p>
+              <p>Maximum: 4 years</p>
             </div>
             <img src={assets.profile_icon} alt="" />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SidebarMainContent
+export default SidebarMainContent;
