@@ -18,12 +18,12 @@ const SidebarMainContent = ({ job }) => {
         </div>
       </div>
       <div><hr className='main-content-space' /></div>
+      <h2>Key Points </h2>
       <div className="main-content-description">
         <ul>
-          <li>Working with case (and proposal) teams</li>
-          <li>Acquiring deep expertise in at least one analytics topic & understanding of all analytics capabilities</li>
-          <li>Defining and explaining expected analytics outcomes; defining approach selection</li>
-          <li>Delivering original analysis and insights to BCG teams, typically owning all or part of an analytics module and integrating with case teams</li>
+          {job.description.split('\n\n').map((paragraph, index) => (
+            <li key={index}>{paragraph}</li>
+          ))}
         </ul>
       </div>
       <div><hr className='main-content-space' /></div>
@@ -33,32 +33,35 @@ const SidebarMainContent = ({ job }) => {
           <div className="main-content-info-user">
             <div className="main-content-user-info-first">
               <h1>Experience</h1>
-              <p>Maximum: 4 years</p>
+              <p>Maximum: {job.experience} years</p>
             </div>
-            <img src={assets.profile_icon} alt="" />
+            <img src={assets.experiencee} alt="" />
           </div>
           <div className="main-content-info-user">
             <div className="main-content-user-info-first">
-              <h1>Experience</h1>
-              <p>Maximum: 4 years</p>
+              <h1>Location</h1>
+              <p>{job.location}</p>
             </div>
-            <img src={assets.profile_icon} alt="" />
+            <img src={assets.location} alt="" />
           </div>
           <div className="main-content-info-user">
             <div className="main-content-user-info-first">
-              <h1>Experience</h1>
-              <p>Maximum: 4 years</p>
+              <h1>Fees Charged : </h1>
+              <p>Maximum: {job.fees}</p>
             </div>
-            <img src={assets.profile_icon} alt="" />
+            <img src={assets.salary} alt="" />
           </div>
           <div className="main-content-info-user">
             <div className="main-content-user-info-first">
-              <h1>Experience</h1>
-              <p>Maximum: 4 years</p>
+              <h1>Timing </h1>
+              <p>Time :{job.timing}</p>
             </div>
-            <img src={assets.profile_icon} alt="" />
+            <img src={assets.timing} alt="" />
           </div>
         </div>
+      </div>
+      <div className="call-button">
+        <button>Call Us</button>
       </div>
     </div>
   );
